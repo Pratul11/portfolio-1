@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/07449e4fb3.js" crossorigin="anonymous"></script>
+       
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Pratul Johari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <img src="./assests/moon.png" id="dark-icon">
+        </ul>
+      </div>
+      
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pratul Johari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#" onclick="toggleMenu()">Dark Mode</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assests/dpp-1.png" alt="Pratul Johari profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title-1">Pratul Johari</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assests/my_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        
+        <div class="social-icon">
+          <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/pratul-johari-4ab420221/'"></i>
+          <i class="fa-brands fa-github" onclick="location.href='https://github.com/Pratul11'"></i>
+        </div>
+
+
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title-about">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assests/dp1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-award"></i>
+              <!-- <img
+                src="./assests/experience.png"
+                alt="Experience icon"
+                class="icon"
+              /> -->
+              <h3 class="exp">Experience</h3>
+              <p>Frontend Development<br>(1+ years)</p>
+            </div>
+            <div class="details-container">
+              <!-- <img
+                src="./assests/education.png"
+                alt="Education icon"
+                class="icon"
+              /> -->
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3 class="exp">Education</h3>
+              <p>B.Tech. Bachelors Degree<br>(2021 - 2025)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello, I'm Pratul Johari, a dedicated third-year Computer Science student 
+              pursuing B.Tech at Graphic Era University in Dehradun. As a Front-End 
+              Developer and Competitive Programmer.
+              <br>
+              <br> I have gained valuable experience through my internship at Oasis 
+              Infobyte, and I hold certifications as an AWS Certified Cloud Practitioner 
+              and a Tensorflow Developer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-code"></i>
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+      </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Construction website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pratul11/OIBSIP_1'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://pratul11.github.io/OIBSIP_1/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/project-2.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Face Emotion Detection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pratul11/Face-Emotion-Detection'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assests/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">QuizUp - A Quiz Application</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Pratul11/Quizo'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assests/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <!-- <div id="service">
+      <div class="container">
+          <h1 class="subtitle">WHAT I DO</h1>
+          <div class="services-list">
+              <div>
+                  <i class="fa-sharp fa-solid fa-code"></i>
+                  <h2>Web development</h2>
+                  <p>
+                      I am passionate about web development and enjoy creating engaging, user-friendly websites. With
+                      expertise in HTML, CSS, and JavaScript, I specialize in designing responsive layouts and
+                      implementing dynamic functionality. I am dedicated to delivering high-quality, scalable
+                      solutions that meet the unique needs of each project.</p>
+              </div>
+              <div>
+                  <i class="fa-solid fa-microchip"></i>
+                  <h2>ML Enthusiast</h2>
+                  <p>Machine learning is a fascinating field that combines statistics, mathematics, and computer
+                      science to create intelligent systems that learn from data. With expertise in supervised and
+                      unsupervised learning, I specialize in developing predictive models that can automate tasks and
+                      improve decision-making. I am passionate about pushing the boundaries of ML to unlock new
+                      possibilities for businesses and society.</p>
+              </div>
+              <div><i class="fa-solid fa-crop-simple"></i>
+                  <h2>Web Design</h2>
+                  <p>
+                      I am a skilled web designer with an eye for aesthetics and user experience. I specialize in
+                      creating intuitive, responsive designs that effectively communicate a brand's message. With
+                      proficiency in tools like Photoshop, Sketch, and Figma, I am committed to crafting visually
+                      stunning websites that captivate and engage users.</p>
+              </div>
+          </div>
+      </div>
+  </div> -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-solid fa-envelope"></i>
+          <p><a href="mailto:pratuljohari608+work@gmail.com">pratuljohari608@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin"></i>
+          <p><a href="https://www.linkedin.com/in/pratul-johari-4ab420221/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pratul Johari. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
