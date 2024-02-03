@@ -198,7 +198,7 @@ section {
 .section__pic-container {
   display: flex;
   height: 400px;
-  width: 300px;
+  width: 400px;
   margin: auto 0;
 }
 
@@ -489,4 +489,8 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+@media screen {
+  
 }
