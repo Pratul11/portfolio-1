@@ -24,4 +24,11 @@ function toggleMenu() {
       icon1.textContent = "Dark Mode";
     }
   }
+  // var typed = new typed(".text", {
+  //   string:["Frontend Developer","Software Developer"],
+  //   typeSpeed: 100,
+  //   backSpeed: 100,
+  //   backDelay: 1000,
+  //   loop: true
+  // });
   
